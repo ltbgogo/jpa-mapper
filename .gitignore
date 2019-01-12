@@ -24,3 +24,7 @@ dist/
 nbdist/
 .nb-gradle/
 sys/
+
+### log ###
+*.log
+*.epoch
