@@ -1,0 +1,13 @@
+<sqls>
+    <seg name="select">
+        select id as book_id,
+        book_name as book_name
+    </seg>
+    <select name="findAllBook">
+        <seg-ref ref="select"/>
+        from t_book order by book_id desc
+    </select>
+    <update name="saveBook">
+        insert into t_book(id, book_name) values(:id, :name)
+    </update>
+</sqls>

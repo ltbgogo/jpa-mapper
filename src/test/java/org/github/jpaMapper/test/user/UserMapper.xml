@@ -1,0 +1,8 @@
+<sqls>
+    <select name="findAllUser">
+        select * from t_user
+    </select>
+    <update name="saveUser">
+        insert into t_user(id, user_name) values(:id, :name)
+    </update>
+</sqls>
